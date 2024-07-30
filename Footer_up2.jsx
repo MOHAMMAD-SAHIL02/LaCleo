@@ -22,6 +22,14 @@ export function Footer() {
                     Sector 50, Noida, Uttar Pradesh 201301
 
                     +91-7428149253
+
+                  
+
+                    
+                    
+
+
+
                   </p>
                 </div>
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
@@ -65,6 +73,8 @@ export function Footer() {
                           </a>
                         </dd>
                       </div>
+
+                      
                     </dl>
                   </div>
                   <div className="rounded-2xl bg-gray-50 p-10">
@@ -95,38 +105,6 @@ export function Footer() {
                   </div>
                 </div>
               </div>
-
-              <!-- New Policies Section -->
-              <div className="space-y-10 pt-10 lg:pt-0">
-                <h2 className="text-3xl font-bold tracking-tight text-gray-900">Our Policies</h2>
-                <div className="space-y-6">
-                  <div className="rounded-2xl bg-gray-50 p-10">
-                    <h3 className="text-base font-semibold leading-7 text-gray-900">Payment Policy</h3>
-                    <p className="mt-3 text-sm leading-6 text-gray-600">Details about payment methods and terms.</p>
-                  </div>
-                  <div className="rounded-2xl bg-gray-50 p-10">
-                    <h3 className="text-base font-semibold leading-7 text-gray-900">Delivery Policy</h3>
-                    <p className="mt-3 text-sm leading-6 text-gray-600">Details about delivery methods, times, and costs.</p>
-                  </div>
-                  <div className="rounded-2xl bg-gray-50 p-10">
-                    <h3 className="text-base font-semibold leading-7 text-gray-900">Refund Policy</h3>
-                    <p className="mt-3 text-sm leading-6 text-gray-600">Details about refund terms and conditions.</p>
-                  </div>
-                  <div className="rounded-2xl bg-gray-50 p-10">
-                    <h3 className="text-base font-semibold leading-7 text-gray-900">Duration Policy</h3>
-                    <p className="mt-3 text-sm leading-6 text-gray-600">Details about the duration of services or products.</p>
-                  </div>
-                  <div className="rounded-2xl bg-gray-50 p-10">
-                    <h3 className="text-base font-semibold leading-7 text-gray-900">Mode Policy</h3>
-                    <p className="mt-3 text-sm leading-6 text-gray-600">Details about the modes of service delivery.</p>
-                  </div>
-                  <div className="rounded-2xl bg-gray-50 p-10">
-                    <h3 className="text-base font-semibold leading-7 text-gray-900">Cancellation Policy</h3>
-                    <p className="mt-3 text-sm leading-6 text-gray-600">Details about cancellation terms and conditions.</p>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
@@ -151,5 +129,16 @@ export function Footer() {
                 <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z" />
               </svg>
             </Link>
-            <Link href="https://www.linkedin.com/company/lacleo/" target="_blank" className="group
-
+            <Link href="https://www.linkedin.com/company/lacleo/" target="_blank" className="group" aria-label="LaCleo on LinkedIn">
+              <svg height="67px" className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700" viewBox="0 0 67 67"><path d="M49.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H49.837z M21.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H21.959z M33,64  C16.432,64,3,50.568,3,34C3,17.431,16.432,4,33,4s30,13.431,30,30C63,50.568,49.568,64,33,64z M25.354,48.137V27.71h-6.789v20.427  H25.354z" /></svg>
+            </Link>
+          </div>
+          <p className="mt-6 text-sm text-slate-500 sm:mt-0">
+            Copyright &copy; {new Date().getFullYear()} La Cleo Digital Private Limited. All rights
+            reserved. <NavLink href="/terms-of-service">Terms of Use</NavLink> | <NavLink href="/privacy-policy">Privacy Policy</NavLink>
+          </p>
+        </div>
+      </Container>
+    </footer>
+  )
+}
